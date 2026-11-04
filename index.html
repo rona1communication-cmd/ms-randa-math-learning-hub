@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free Grade 10 Alberta Math 10C lessons, worked examples and interactive practice from Ms Randa.">
+<title>Ms Randa Math Learning Hub</title>
+<style>
+:root{--navy:#172554;--blue:#3156a6;--sky:#eaf1ff;--teal:#087e8b;--ink:#1f2937;--muted:#64748b;--paper:#f7f9fc;--line:#dbe3ef;--white:#fff;--gold:#f4b942}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(120deg,#172554,#3156a6);color:#fff;padding:26px max(20px,calc((100% - 1120px)/2)) 30px}
+.brand{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#dbeafe;font-weight:700}.hero{display:flex;gap:28px;align-items:center;justify-content:space-between;max-width:1120px;margin:auto}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:10px 0}.hero p{max-width:620px;color:#e4ebff;margin:0}.hero-mark{border:1px solid #ffffff55;border-radius:22px;padding:18px 22px;text-align:center;min-width:150px;background:#ffffff12}.hero-mark strong{display:block;font-size:22px}.hero-mark span{font-size:12px;color:#dbeafe}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:center;gap:8px;padding:9px 12px;flex-wrap:wrap}
+nav button,.btn{border:0;border-radius:999px;padding:9px 15px;background:var(--sky);color:var(--navy);font-weight:700;cursor:pointer}nav button.active,.btn.primary{background:var(--blue);color:white}button:hover{filter:brightness(.96)}
+main{max-width:1120px;margin:26px auto;padding:0 18px 60px}.layout{display:grid;grid-template-columns:260px 1fr;gap:22px}.panel,.card,.lesson{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 4px 18px #17255408}.sidebar{align-self:start;position:sticky;top:76px}.sidebar h3{margin:0 0 10px}.unit-btn{display:block;width:100%;text-align:left;background:transparent;border:0;border-radius:10px;padding:10px;color:var(--ink);cursor:pointer}.unit-btn.active,.unit-btn:hover{background:var(--sky);color:var(--navy);font-weight:700}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}h2{color:var(--navy);font-size:28px;line-height:1.2;margin:5px 0 12px}h3{color:var(--navy);margin-top:22px}.muted{color:var(--muted)}.tag{display:inline-block;background:#e8f6f5;color:#08636b;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;margin:3px 4px 3px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.unit-card{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}.unit-card h3{margin:5px 0}.unit-card p{margin:5px 0;color:var(--muted);font-size:14px}.lesson{margin-top:16px}.formula{background:#f0f5ff;border-left:4px solid var(--blue);padding:12px 15px;border-radius:8px;font-size:18px;font-weight:650;overflow-x:auto}.example{background:#fbfcff;border:1px solid var(--line);padding:14px;border-radius:12px;margin:12px 0}.steps{padding-left:22px}.question{padding:15px 0;border-bottom:1px solid var(--line)}.question:last-child{border:0}.question label{display:block;margin:7px 0;cursor:pointer}.feedback{font-weight:700;margin-top:8px}.good{color:#087443}.bad{color:#b42318}.quiz-result{background:var(--sky);padding:13px;border-radius:10px;margin-top:14px;font-weight:700}.footer{text-align:center;padding:26px;color:var(--muted);font-size:13px}.notice{background:#fff8e8;border:1px solid #f3d58b;padding:12px 14px;border-radius:12px;color:#654b13;font-size:14px}
+a{color:#3156a6} .hidden{display:none!important}
+@media(max-width:760px){.hero{display:block}.hero-mark{display:inline-block;margin-top:18px}.layout{grid-template-columns:1fr}.sidebar{position:static}.grid{grid-template-columns:1fr}nav{justify-content:flex-start;overflow:auto;flex-wrap:nowrap}nav button{white-space:nowrap}main{margin-top:16px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="hero">
+  <div>
+   <div class="brand">Ms Randa presents</div>
+   <h1>Math Learning Hub</h1>
+   <p>Understand the idea. Practise the skill. Build confidence.<br>Free learning resources for Alberta Grade 10 Mathematics (Math 10C).</p>
+  </div>
+  <div class="hero-mark"><strong>Practice</strong><span>MAKES PERFECT</span></div>
+ </div>
+</header>
+<nav aria-label="Main navigation">
+ <button class="active" data-view="home">Home</button>
+ <button data-view="course">Course map</button>
+ <button data-view="lessons">Lessons</button>
+ <button data-view="practice">Practice & quizzes</button>
+ <button data-view="about">About Ms Randa</button>
+</nav>
+<main>
+<section id="home" class="view">
+ <div class="panel">
+  <div class="eyebrow">Welcome, mathematician!</div>
+  <h2>Your Math 10C learning space</h2>
+  <p>Use this hub to review key ideas, follow worked examples and check your understanding with short quizzes. Work at your own pace and show every step in your notebook.</p>
+  <div class="notice"><strong>Course note:</strong> Alberta Math 10C course plans can vary by school. This learning hub follows a commonly used Math 10C topic sequence and is a supplementary study resource, not an official Alberta Education website.</div>
+  <p><button class="btn primary" onclick="showView('course')">Explore the course</button> <button class="btn" onclick="showView('lessons')">Start Lesson 1</button></p>
+ </div>
+ <h2 style="margin-top:26px">What you'll find here</h2>
+ <div class="grid">
+  <div class="unit-card"><span class="tag">Learn</span><h3>Clear explanations</h3><p>Short notes, definitions and step-by-step worked examples.</p></div>
+  <div class="unit-card"><span class="tag">Practise</span><h3>Check your understanding</h3><p>Quick questions with instant feedback and explanations.</p></div>
+  <div class="unit-card"><span class="tag">Review</span><h3>Build strong foundations</h3><p>Revisit number, algebra, functions, measurement and trigonometry.</p></div>
+  <div class="unit-card"><span class="tag">Progress</span><h3>Learn at your pace</h3><p>No student account is needed for this first public version.</p></div>
+ </div>
+</section>
+<section id="course" class="view hidden">
+ <div class="eyebrow">Alberta · Grade 10</div><h2>Math 10C Course Map</h2>
+ <p class="muted">Select a unit to see its planned lessons. More lesson pages and assessments can be added as the course grows.</p>
+ <div class="grid" id="unitGrid"></div>
+</section>
+<section id="lessons" class="view hidden">
+ <div class="eyebrow">Unit 1 · Number</div><h2>Lesson 1: The Real Number System</h2>
+ <p>Learning goal: classify numbers and understand how the main number sets are related.</p>
+ <div class="lesson">
+  <h3>1. Natural and whole numbers</h3>
+  <p><strong>Natural numbers</strong> are counting numbers: 1, 2, 3, 4, … . In this course, we use <strong>whole numbers</strong> to include zero: 0, 1, 2, 3, … .</p>
+  <h3>2. Integers</h3><p><strong>Integers</strong> include negative whole numbers, zero and positive whole numbers.</p>
+  <div class="formula">…, −3, −2, −1, 0, 1, 2, 3, …</div>
+  <h3>3. Rational numbers</h3><p>A <strong>rational number</strong> can be written as a fraction <em>a/b</em>, where <em>a</em> and <em>b</em> are integers and <em>b ≠ 0</em>. Its decimal form terminates or repeats.</p>
+  <div class="example"><strong>Examples:</strong> 3/4 = 0.75; 1/3 = 0.333…; −5 = −5/1.</div>
+  <h3>4. Irrational numbers</h3><p>An <strong>irrational number</strong> cannot be written as a ratio of two integers. Its decimal expansion neither terminates nor repeats.</p>
+  <div class="example"><strong>Examples:</strong> √2, π. Note: √9 = 3, so √9 is rational, not irrational.</div>
+  <h3>5. Real numbers</h3><p>The <strong>real numbers</strong> include all rational and irrational numbers. Every point on the number line represents a real number.</p>
+  <div class="formula">Rational numbers ∪ Irrational numbers = Real numbers</div>
+  <h3>Worked example</h3><p>Classify −2.75.</p><ol class="steps"><li>Write it as a fraction: −2.75 = −275/100 = −11/4.</li><li>It is a ratio of integers, so it is rational.</li><li>All rational numbers are real numbers.</li></ol><p><strong>Answer:</strong> −2.75 is rational and real.</p>
+  <h3>Common mistake</h3><p>Not every square root is irrational. Simplify the radicand first: √16 = 4 is rational, while √5 is irrational.</p>
+ </div>
+ <div class="lesson">
+  <div class="eyebrow">Unit 1 · Number</div><h2 style="font-size:24px">Lesson 2: Understanding Radicals</h2>
+  <p>Learning goal: evaluate square roots, identify perfect squares and simplify simple radicals.</p>
+  <h3>1. What is a square root?</h3><p>The square root of a non-negative number <em>n</em> is the non-negative number that, when multiplied by itself, gives <em>n</em>.</p>
+  <div class="formula">√49 = 7 because 7 × 7 = 49</div>
+  <p>Remember: √49 means the principal (positive) square root. The equation x² = 49 has two solutions: x = 7 or x = −7.</p>
+  <h3>2. Perfect squares</h3><p>Useful perfect squares include:</p><div class="formula">1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144</div>
+  <h3>3. Simplifying a radical</h3><p>Look for the largest perfect-square factor inside the radical.</p>
+  <div class="example"><strong>Example:</strong> Simplify √72.<ol class="steps"><li>72 = 36 × 2.</li><li>√72 = √36 × √2.</li><li><strong>√72 = 6√2.</strong></li></ol></div>
+  <h3>4. Estimating a square root</h3><p>Since 25 &lt; 30 &lt; 36, it follows that 5 &lt; √30 &lt; 6.</p>
+ </div>
+ <div class="lesson">
+  <div class="eyebrow">Unit 2 · Exponents</div><h2 style="font-size:24px">Lesson 3: Exponent Laws</h2>
+  <p>Learning goal: simplify powers with the same base and apply zero and negative exponents.</p>
+  <h3>Product law</h3><div class="formula">aᵐ × aⁿ = aᵐ⁺ⁿ</div><p>Example: 2³ × 2⁴ = 2⁷ = 128.</p>
+  <h3>Quotient law</h3><div class="formula">aᵐ ÷ aⁿ = aᵐ⁻ⁿ &nbsp; (a ≠ 0)</div><p>Example: x⁷ ÷ x³ = x⁴.</p>
+  <h3>Power of a power</h3><div class="formula">(aᵐ)ⁿ = aᵐⁿ</div><p>Example: (x³)² = x⁶.</p>
+  <h3>Zero exponent</h3><div class="formula">a⁰ = 1 &nbsp; (a ≠ 0)</div>
+  <h3>Negative exponent</h3><div class="formula">a⁻ⁿ = 1/aⁿ &nbsp; (a ≠ 0)</div><p>Example: 2⁻³ = 1/2³ = 1/8.</p>
+  <div class="example"><strong>Worked example:</strong><br>(2x³)² × x⁴ ÷ x²<br>= 4x⁶ × x⁴ ÷ x²<br>= <strong>4x⁸</strong>.</div>
+ </div>
+</section>
+<section id="practice" class="view hidden">
+ <div class="eyebrow">Quick knowledge check</div><h2>Practice & Quizzes</h2><p class="muted">Choose one answer for each question, then select Mark my quiz. Your answers are checked in this browser only; scores are not sent to a teacher.</p>
+ <form id="quizForm">
+  <div class="question"><strong>1. Which set contains −4, 0 and 7?</strong>
+   <label><input type="radio" name="q1" value="a"> Natural numbers</label><label><input type="radio" name="q1" value="b"> Integers</label><label><input type="radio" name="q1" value="c"> Irrational numbers</label><div id="f1" class="feedback"></div></div>
+  <div class="question"><strong>2. Which number is irrational?</strong>
+   <label><input type="radio" name="q2" value="a"> 0.25</label><label><input type="radio" name="q2" value="b"> √25</label><label><input type="radio" name="q2" value="c"> √7</label><div id="f2" class="feedback"></div></div>
+  <div class="question"><strong>3. Simplify √72.</strong>
+   <label><input type="radio" name="q3" value="a"> 6√2</label><label><input type="radio" name="q3" value="b"> 8√2</label><label><input type="radio" name="q3" value="c"> 3√8</label><div id="f3" class="feedback"></div></div>
+  <div class="question"><strong>4. Simplify x⁵ × x³.</strong>
+   <label><input type="radio" name="q4" value="a"> x¹⁵</label><label><input type="radio" name="q4" value="b"> x²</label><label><input type="radio" name="q4" value="c"> x⁸</label><div id="f4" class="feedback"></div></div>
+  <div class="question"><strong>5. What is the value of 3⁻²?</strong>
+   <label><input type="radio" name="q5" value="a"> −9</label><label><input type="radio" name="q5" value="b"> 1/9</label><label><input type="radio" name="q5" value="c"> 9</label><div id="f5" class="feedback"></div></div>
+  <button class="btn primary" type="submit">Mark my quiz</button> <button class="btn" type="reset" id="resetQuiz">Try again</button>
+  <div id="quizResult" class="quiz-result hidden" aria-live="polite"></div>
+ </form>
+</section>
+<section id="about" class="view hidden">
+ <div class="eyebrow">Your teacher</div><h2>About Ms Randa</h2>
+ <div class="panel"><p>Welcome to my Math Learning Hub! I'm Ms Randa, an online Mathematics and ICT tutor. I believe that students learn best when they understand the idea, practise carefully and build confidence step by step.</p><p>My teaching motto is <strong>Practice Makes Perfect</strong>.</p><p>This website is a growing collection of explanations, worked examples and practice activities for students.</p></div>
+</section>
+<div class="footer">© Ms Randa Math Learning Hub · Independent learning resource · Not affiliated with Alberta Education</div>
+</main>
+<script>
+const units=[
+["Number, Radicals & Exponents","Real number system · Rational and irrational numbers · Radicals · Exponent laws"],
+["Polynomials & Factoring","Polynomial language · Multiplication · Common factors · Trinomials · Difference of squares"],
+["Relations & Functions","Relations · Domain and range · Function notation · Representations"],
+["Linear Relations & Graphs","Slope · Intercepts · Equations of lines · Graph interpretation"],
+["Systems of Linear Equations","Graphing · Substitution · Elimination · Applications"],
+["Measurement & Trigonometry","Metric and imperial conversions · Area · Surface area · Volume · Right-triangle trigonometry"],
+["Review & Exam Preparation","Mixed practice · Cumulative review · Problem-solving strategies"]
+];
+const unitGrid=document.getElementById("unitGrid");
+units.forEach((u,i)=>{const d=document.createElement("div");d.className="unit-card";d.innerHTML=`<span class="tag">Unit ${i+1}</span><h3>${u[0]}</h3><p>${u[1]}</p>${i===0?'<button class="btn primary" onclick="showView(\\'lessons\\')">Open lessons</button>':'<span class="muted">Planned course unit</span>'}`;unitGrid.appendChild(d)});
+function showView(id){document.querySelectorAll(".view").forEach(v=>v.classList.add("hidden"));document.getElementById(id).classList.remove("hidden");document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===id));window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>showView(b.dataset.view)));
+const key={q1:"b",q2:"c",q3:"a",q4:"c",q5:"b"};
+const explanations={q1:"Integers include negative whole numbers, zero and positive whole numbers.",q2:"√7 is not a ratio of integers; its decimal is non-terminating and non-repeating.",q3:"72 = 36 × 2, so √72 = 6√2.",q4:"When multiplying powers with the same base, add exponents: 5 + 3 = 8.",q5:"3⁻² = 1/3² = 1/9."};
+document.getElementById("quizForm").addEventListener("submit",e=>{e.preventDefault();let score=0;for(let i=1;i<=5;i++){const q="q"+i;const chosen=document.querySelector(`input[name="${q}"]:checked`);const f=document.getElementById("f"+i);if(chosen&&chosen.value===key[q]){score++;f.className="feedback good";f.textContent="Correct. "+explanations[q]}else{f.className="feedback bad";f.textContent="Not quite. "+explanations[q]}}const r=document.getElementById("quizResult");r.classList.remove("hidden");r.textContent=`Your score: ${score}/5. ${score===5?"Excellent work!":score>=3?"Good effort. Review the explanations and try again.":"Keep practising. Revisit the lessons and try again."}`});
+document.getElementById("resetQuiz").addEventListener("click",()=>{document.querySelectorAll(".feedback").forEach(f=>{f.textContent="";f.className="feedback"});document.getElementById("quizResult").classList.add("hidden")});
+</script>
+</body>
+</html>
